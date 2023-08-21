@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MaterialDef Name="Sponza_Stone2ndFloorMaterial" Parent="Base_TextureMaterial">
+    <TextureInputs>
+        <lv>
+            <Slot>0</Slot>
+            <Path>Textures/stones_2ndfloor_01_BaseColor.png</Path>
+            <AddressMode>Repeat</AddressMode>
+            <FilterMode>Linear</FilterMode>
+        </lv>
+    </TextureInputs>
+</MaterialDef>

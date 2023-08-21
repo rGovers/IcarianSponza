@@ -1,0 +1,7 @@
+Export:
+OBJ
+-Y UP
+X FORWARD
+
+Do a material split on the model
+Engine does not support material masking

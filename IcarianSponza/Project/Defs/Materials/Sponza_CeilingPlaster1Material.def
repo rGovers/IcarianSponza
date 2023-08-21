@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MaterialDef Name="Sponza_CeilingPlaster1Material" Parent="Base_TextureMaterial">
+    <TextureInputs>
+        <lv>
+            <Slot>0</Slot>
+            <Path>Textures/ceiling_plaster_01_BaseColor.png</Path>
+            <AddressMode>Repeat</AddressMode>
+            <FilterMode>Linear</FilterMode>
+        </lv>
+    </TextureInputs>
+</MaterialDef>

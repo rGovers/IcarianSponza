@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scene>
+    <Objects>
+        <GameObject>
+            <DefName>SponzaSC_FloorOBJ_1stFloor</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_CeilingOBJ_1stFloor</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_WallsOBJ_1stFloor_01</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_WallsOBJ_1stFloor_02</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_ColumnsOBJ_1stFloor_01</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_ColumnsOBJ_1stFloor_02</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_ColumnsOBJ_1stFloor_03</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_ColumnsOBJ_1stFloor_04</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_ColumnsOBJ_1stFloor_05</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LionHeadOBJ</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_ArchStonesOBJ_01</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_ArchStonesOBJ_02</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_ArchStonesOBJ_03</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_ArchStonesOBJ_04</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_ArchStonesOBJ_05</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_OrnamentDoorsOBJ_7</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_OrnamentDoorsOBJ_8</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_OrnamentDoorsOBJ_9</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_OrnamentDoorsOBJ_10</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_WoodPartsOBJ</DefName>
+        </GameObject>
+    </Objects>
+    <Defs>
+        <MeshRendererDef Name="SponzaSC_Ceiling_1stFloor_Plaster">
+            <ModelPath>Models/Sponza_Ceiling_1stFloor_Plaster.obj</ModelPath>
+            <MaterialDef>Sponza_CeilingPlaster2Material</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Ceiling_1stFloor_Stones">
+            <ModelPath>Models/Sponza_Ceiling_1stFloor_Stones.obj</ModelPath>
+            <MaterialDef>Sponza_Stone2ndFloorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Ceiling_1stFloor_StoneTrims">
+            <ModelPath>Models/Sponza_Ceiling_1stFloor_StoneTrims.obj</ModelPath>
+            <MaterialDef>Sponza_StoneTrims2Material</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_CeilingOBJ_1stFloor">
+            <Components>
+                <lv>SponzaSC_Ceiling_1stFloor_Plaster</lv>
+                <lv>SponzaSC_Ceiling_1stFloor_Stones</lv>
+                <lv>SponzaSC_Ceiling_1stFloor_StoneTrims</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Floor_1stFloor_Tiles">
+            <ModelPath>Models/Sponza_Floor_1stFloor_Tiles.obj</ModelPath>
+            <MaterialDef>Sponza_FloorTilesMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Floor_1stFloor_Stone">
+            <ModelPath>Models/Sponza_Floor_1stFloor_Stone.obj</ModelPath>
+            <MaterialDef>Sponza_StoneTileMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Floor_1stFloor_Metal">
+            <ModelPath>Models/Sponza_Floor_1stFloor_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_FloorOBJ_1stFloor">
+            <Components>
+                <lv>SponzaSC_Floor_1stFloor_Tiles</lv>
+                <lv>SponzaSC_Floor_1stFloor_Stone</lv>
+                <lv>SponzaSC_Floor_1stFloor_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Walls_1stFloor_01_BrickWall">
+            <ModelPath>Models/Sponza_Walls_1stFloor_01_BrickWall.obj</ModelPath>
+            <MaterialDef>Sponza_BrickWall1Material</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Walls_1stFloor_01_StoneTrims">
+            <ModelPath>Models/Sponza_Walls_1stFloor_01_StoneTrims.obj</ModelPath>
+            <MaterialDef>Sponza_StoneTrims2Material</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Walls_1stFloor_01_Arch">
+            <ModelPath>Models/Sponza_Walls_1stFloor_01_Arch.obj</ModelPath>
+            <MaterialDef>Sponza_ArchMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Walls_1stFloor_01_Tile">
+            <ModelPath>Models/Sponza_Walls_1stFloor_01_Tile.obj</ModelPath>
+            <MaterialDef>Sponza_StoneTileMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_WallsOBJ_1stFloor_01">
+            <Components>
+                <lv>SponzaSC_Walls_1stFloor_01_BrickWall</lv>
+                <lv>SponzaSC_Walls_1stFloor_01_StoneTrims</lv>
+                <lv>SponzaSC_Walls_1stFloor_01_Arch</lv>
+                <lv>SponzaSC_Walls_1stFloor_01_Tile</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Walls_1stFloor_02_StoneFrame">
+            <ModelPath>Models/Sponza_Walls_1stFloor_02_StoneFrame.obj</ModelPath>
+            <MaterialDef>Sponza_DoorStoneFrame2Material</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Walls_1stFloor_02_StoneTiles">
+            <ModelPath>Models/Sponza_Walls_1stFloor_02_StoneTiles.obj</ModelPath>
+            <MaterialDef>Sponza_StoneTileMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_WallsOBJ_1stFloor_02">
+            <Components>
+                <lv>SponzaSC_Walls_1stFloor_02_StoneFrame</lv>
+                <lv>SponzaSC_Walls_1stFloor_02_StoneTiles</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Columns_1stFloor_01_Head">
+            <ModelPath>Models/Sponza_Columns_1stFloor_01_Head.obj</ModelPath>
+            <MaterialDef>Sponza_ColumnHeadMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Columns_1stFloor_01_Base">
+            <ModelPath>Models/Sponza_Columns_1stFloor_01_Base.obj</ModelPath>
+            <MaterialDef>Sponza_ColumnBaseMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_ColumnsOBJ_1stFloor_01">
+            <Components>
+                <lv>SponzaSC_Columns_1stFloor_01_Head</lv>
+                <lv>SponzaSC_Columns_1stFloor_01_Base</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Columns_1stFloor_02_Head">
+            <ModelPath>Models/Sponza_Columns_1stFloor_02_Head.obj</ModelPath>
+            <MaterialDef>Sponza_ColumnHeadMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Columns_1stFloor_02_Base">
+            <ModelPath>Models/Sponza_Columns_1stFloor_02_Base.obj</ModelPath>
+            <MaterialDef>Sponza_ColumnBaseMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_ColumnsOBJ_1stFloor_02">
+            <Components>
+                <lv>SponzaSC_Columns_1stFloor_02_Head</lv>
+                <lv>SponzaSC_Columns_1stFloor_02_Base</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Columns_1stFloor_03_Head">
+            <ModelPath>Models/Sponza_Columns_1stFloor_03_Head.obj</ModelPath>
+            <MaterialDef>Sponza_ColumnHeadMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Columns_1stFloor_03_Base">
+            <ModelPath>Models/Sponza_Columns_1stFloor_03_Base.obj</ModelPath>
+            <MaterialDef>Sponza_ColumnBaseMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_ColumnsOBJ_1stFloor_03">
+            <Components>
+                <lv>SponzaSC_Columns_1stFloor_03_Head</lv>
+                <lv>SponzaSC_Columns_1stFloor_03_Base</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Columns_1stFloor_04_Head">
+            <ModelPath>Models/Sponza_Columns_1stFloor_04_Head.obj</ModelPath>
+            <MaterialDef>Sponza_ColumnHeadMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Columns_1stFloor_04_Base">
+            <ModelPath>Models/Sponza_Columns_1stFloor_04_Base.obj</ModelPath>
+            <MaterialDef>Sponza_ColumnBaseMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_ColumnsOBJ_1stFloor_04">
+            <Components>
+                <lv>SponzaSC_Columns_1stFloor_04_Head</lv>
+                <lv>SponzaSC_Columns_1stFloor_04_Base</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSc_Columns_1stFloor_05_Head">
+            <ModelPath>Models/Sponza_Columns_1stFloor_05_Head.obj</ModelPath>
+            <MaterialDef>Sponza_ColumnHeadMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Columns_1stFloor_05_Base">
+            <ModelPath>Models/Sponza_Columns_1stFloor_05_Base.obj</ModelPath>
+            <MaterialDef>Sponza_ColumnBaseMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_ColumnsOBJ_1stFloor_05">
+            <Components>
+                <lv>SponzaSc_Columns_1stFloor_05_Head</lv>
+                <lv>SponzaSC_Columns_1stFloor_05_Base</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_LionHead">
+            <ModelPath>Models/Sponza_LionHead.obj</ModelPath>
+            <MaterialDef>Sponza_LionHeadMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LionHeadOBJ">
+            <Components>
+                <lv>SponzaSC_LionHead</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_01_Arch">
+            <ModelPath>Models/Sponza_ArchStones_01_Arch.obj</ModelPath>
+            <MaterialDef>Sponza_ArchMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_01_StoneTrims">
+            <ModelPath>Models/Sponza_ArchStones_01_StoneTrims.obj</ModelPath>
+            <MaterialDef>Sponza_StoneTrims1Material</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_ArchStonesOBJ_01">
+            <Components>
+                <lv>SponzaSC_ArchStones_01_Arch</lv>
+                <lv>SponzaSC_ArchStones_01_StoneTrims</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_02_Arch">
+            <ModelPath>Models/Sponza_ArchStones_02_Arch.obj</ModelPath>
+            <MaterialDef>Sponza_ArchMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_02_StoneTrims">
+            <ModelPath>Models/Sponza_ArchStones_02_StoneTrims.obj</ModelPath>
+            <MaterialDef>Sponza_StoneTrims1Material</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_ArchStonesOBJ_02">
+            <Components>
+                <lv>SponzaSC_ArchStones_02_Arch</lv>
+                <lv>SponzaSC_ArchStones_02_StoneTrims</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_03_BrickWall">
+            <ModelPath>Models/Sponza_ArchStones_03_BrickWall.obj</ModelPath>
+            <MaterialDef>Sponza_BrickWall2Material</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_03_Metal">
+            <ModelPath>Models/Sponza_ArchStones_03_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_ArchStonesOBJ_03">
+            <Components>
+                <lv>SponzaSC_ArchStones_03_BrickWall</lv>
+                <lv>SponzaSC_ArchStones_03_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_04_Arch">
+            <ModelPath>Models/Sponza_ArchStones_04_Arch.obj</ModelPath>
+            <MaterialDef>Sponza_ArchMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_04_CeilingPlaster">
+            <ModelPath>Models/Sponza_ArchStones_04_CeilingPlaster.obj</ModelPath>
+            <MaterialDef>Sponza_CeilingPlaster2Material</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_04_Floor">
+            <ModelPath>Models/Sponza_ArchStones_04_Floor.obj</ModelPath>
+            <MaterialDef>Sponza_FloorTilesMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_04_Glass">
+            <ModelPath>Models/Sponza_ArchStones_04_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_GlassMaterial</MaterialDef>
+        </MeshRendererDef> 
+        <MeshRendererDef Name="SponzaSC_ArchStones_04_Metal">
+            <ModelPath>Models/Sponza_ArchStones_04_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_04_Stones">
+            <ModelPath>Models/Sponza_ArchStones_04_Stones.obj</ModelPath>
+            <MaterialDef>Sponza_Stone2ndFloorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaCS_ArchStones_04_StoneTile">
+            <ModelPath>Models/Sponza_ArchStones_04_StoneTile.obj</ModelPath>
+            <MaterialDef>Sponza_StoneTileMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_04_StoneTrims">
+            <ModelPath>Models/Sponza_ArchStones_04_StoneTrims.obj</ModelPath>
+            <MaterialDef>Sponza_StoneTrims1Material</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_04_Window">
+            <ModelPath>Models/Sponza_ArchStones_04_Window.obj</ModelPath>
+            <MaterialDef>Sponza_WindowMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_ArchStonesOBJ_04">
+            <Components>
+                <lv>SponzaSC_ArchStones_04_Arch</lv>
+                <lv>SponzaSC_ArchStones_04_CeilingPlaster</lv>
+                <lv>SponzaSC_ArchStones_04_Floor</lv>
+                <lv>SponzaSC_ArchStones_04_Glass</lv>
+                <lv>SponzaSC_ArchStones_04_Metal</lv>
+                <lv>SponzaSC_ArchStones_04_Stones</lv>
+                <lv>SponzaCS_ArchStones_04_StoneTile</lv>
+                <lv>SponzaSC_ArchStones_04_StoneTrims</lv>
+                <lv>SponzaSC_ArchStones_04_Window</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_05_Metal">
+            <ModelPath>Models/Sponza_ArchStones_05_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_05_StoneTrims">
+            <ModelPath>Models/Sponza_ArchStones_05_StoneTrims.obj</ModelPath>
+            <MaterialDef>Sponza_StoneTrims1Material</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_ArchStones_05_StoneWall">
+            <ModelPath>Models/Sponza_ArchStones_05_StoneWall.obj</ModelPath>
+            <MaterialDef>Sponza_ArchMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_ArchStonesOBJ_05">
+            <Components>
+                <lv>SponzaSC_ArchStones_05_Metal</lv>
+                <lv>SponzaSC_ArchStones_05_StoneTrims</lv>
+                <lv>SponzaSC_ArchStones_05_StoneWall</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_7_Glass">
+            <ModelPath>Models/Sponza_OrnamentDoors_7_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_GlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_7_Metal">
+            <ModelPath>Models/Sponza_OrnamentDoors_7_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_7_StoneFrame">
+            <ModelPath>Models/Sponza_OrnamentDoors_7_StoneFrame.obj</ModelPath>
+            <MaterialDef>Sponza_DoorStoneFrame1Material</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_OrnamentDoorsOBJ_7">
+            <Components>
+                <lv>SponzaSC_OrnamentDoors_7_Glass</lv>
+                <lv>SponzaSC_OrnamentDoors_7_Metal</lv>
+                <lv>SponzaSC_OrnamentDoors_7_StoneFrame</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_8_Glass">
+            <ModelPath>Models/Sponza_OrnamentDoors_8_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_GlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_8_Metal">
+            <ModelPath>Models/Sponza_OrnamentDoors_8_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_8_StoneFrame">
+            <ModelPath>Models/Sponza_OrnamentDoors_8_StoneFrame.obj</ModelPath>
+            <MaterialDef>Sponza_DoorStoneFrame1Material</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_OrnamentDoorsOBJ_8">
+            <Components>
+                <lv>SponzaSC_OrnamentDoors_8_Glass</lv>
+                <lv>SponzaSC_OrnamentDoors_8_Metal</lv>
+                <lv>SponzaSC_OrnamentDoors_8_StoneFrame</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_9_Glass">
+            <ModelPath>Models/Sponza_OrnamentDoors_9_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_GlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_9_Metal">
+            <ModelPath>Models/Sponza_OrnamentDoors_9_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_9_StoneFrame">
+            <ModelPath>Models/Sponza_OrnamentDoors_9_StoneFrame.obj</ModelPath>
+            <MaterialDef>Sponza_DoorStoneFrame2Material</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_9_Window">
+            <ModelPath>Models/Sponza_OrnamentDoors_9_Window.obj</ModelPath>
+            <MaterialDef>Sponza_WindowMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_OrnamentDoorsOBJ_9">
+            <Components>
+                <lv>SponzaSC_OrnamentDoors_9_Glass</lv>
+                <lv>SponzaSC_OrnamentDoors_9_Metal</lv>
+                <lv>SponzaSC_OrnamentDoors_9_StoneFrame</lv>
+                <lv>SponzaSC_OrnamentDoors_9_Window</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_10_Glass">
+            <ModelPath>Models/Sponza_OrnamentDoors_10_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_GlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_10_Metal">
+            <ModelPath>Models/Sponza_OrnamentDoors_10_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_10_StoneFrame">
+            <ModelPath>Models/Sponza_OrnamentDoors_10_StoneFrame.obj</ModelPath>
+            <MaterialDef>Sponza_DoorStoneFrame1Material</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_10_Stones">
+            <ModelPath>Models/Sponza_OrnamentDoors_10_Stones.obj</ModelPath>
+            <MaterialDef>Sponza_Stone2ndFloorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_10_StoneTile">
+            <ModelPath>Models/Sponza_OrnamentDoors_10_StoneTile.obj</ModelPath>
+            <MaterialDef>Sponza_StoneTileMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentDoors_10_Window">
+            <ModelPath>Models/Sponza_OrnamentDoors_10_Window.obj</ModelPath>
+            <MaterialDef>Sponza_WindowMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_OrnamentDoorsOBJ_10">
+            <Components>
+                <lv>SponzaSC_OrnamentDoors_10_Glass</lv>
+                <lv>SponzaSC_OrnamentDoors_10_Metal</lv>
+                <lv>SponzaSC_OrnamentDoors_10_StoneFrame</lv>
+                <lv>SponzaSC_OrnamentDoors_10_Stones</lv>
+                <lv>SponzaSC_OrnamentDoors_10_StoneTile</lv>
+                <lv>SponzaSC_OrnamentDoors_10_Window</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_WoodParts_Wood">
+            <ModelPath>Models/Sponza_WoodParts_Wood.obj</ModelPath>
+            <MaterialDef>Sponza_WoodMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_WoodParts_Metal">
+            <ModelPath>Models/Sponza_WoodParts_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_WoodParts_Glass">
+            <ModelPath>Models/Sponza_WoodParts_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_GlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_WoodParts_WoodDoor">
+            <ModelPath>Models/Sponza_WoodParts_WoodDoor.obj</ModelPath>
+            <MaterialDef>Sponza_WoodDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_WoodPartsOBJ">
+            <Components>
+                <lv>SponzaSC_WoodParts_Wood</lv>
+                <lv>SponzaSC_WoodParts_Metal</lv>
+                <lv>SponzaSC_WoodParts_Glass</lv>
+                <lv>SponzaSC_WoodParts_WoodDoor</lv>
+            </Components>
+        </GameObjectDef>
+    </Defs>
+</Scene>

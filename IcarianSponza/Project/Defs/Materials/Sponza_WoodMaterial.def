@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MaterialDef Name="Sponza_WoodMaterial" Parent="Base_TextureMaterial">
+    <TextureInputs>
+        <lv>
+            <Slot>0</Slot>
+            <Path>Textures/wood_tile_01_BaseColor.png</Path>
+            <AddressMode>Repeat</AddressMode>
+            <FilterMode>Linear</FilterMode>
+        </lv>
+    </TextureInputs>
+</MaterialDef>
