@@ -13,5 +13,5 @@ void main()
     outColor = vec4(0.0, 0.0, 0.0, 1.0);
     outNormal = vec4(fragNormal, 1.0);
     outSpec = vec4(0.0, 0.0, 0.0, 0.0);
-    outEmission = vec4(0.1, 0.1, 0.08, 1.0);
+    outEmission = vec4(0.04, 0.04, 0.05, 1.0);
 }
