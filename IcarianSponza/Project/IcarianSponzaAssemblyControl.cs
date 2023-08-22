@@ -48,7 +48,7 @@ namespace IcarianSponza
             GameObject lightObj = GameObject.Instantiate<GameObject>();
             lightObj.Transform.Rotation = Quaternion.FromAxisAngle(Vector3.Normalized(new Vector3(1.0f, 0.0f, 0.5f)), 2.0f);
             DirectionalLight light = lightObj.AddComponent<DirectionalLight>();
-            light.Color = Color.White;
+            light.Color = Color.FromColorCode(0xEEEEFFFF);
             light.Intensity = 2.5f;
         }
 
