@@ -19,7 +19,7 @@ void main()
     gl_Position = camBuffer.ViewProj * modelBuffer.Model * pos;
 
     fragColor = color;
-    fragNormal = normal;
+    fragNormal = vec3(-normal.x, normal.y, normal.z);
     // Models expect flipped texture coordinates
     fragTexCoord = vec2(texCoord.x, 1.0f - texCoord.y);
 }

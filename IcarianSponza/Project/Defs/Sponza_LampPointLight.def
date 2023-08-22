@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PointLightDef Name="Sponza_LampPointLight">
+    <Radius>5.0</Radius>
+    <Color>
+        <R>255</R>
+        <G>225</G>
+        <B>200</B>
+        <A>255</A>
+    </Color>
+    <Intensity>5.0</Intensity>
+</PointLightDef>

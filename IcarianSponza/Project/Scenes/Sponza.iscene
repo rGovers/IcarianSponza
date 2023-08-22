@@ -17,6 +17,9 @@
             <DefName>SponzaSC_WallsOBJ_1stFloor_02</DefName>
         </GameObject>
         <GameObject>
+            <DefName>SponzaSC_OrnamentStonesOBJ_1stFloor</DefName>
+        </GameObject>
+        <GameObject>
             <DefName>SponzaSC_ColumnsOBJ_1stFloor_01</DefName>
         </GameObject>
         <GameObject>
@@ -142,6 +145,48 @@
         <GameObject>
             <DefName>SponzaSC_OrnamentStonesOBJ_2ndFloor</DefName>
         </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LampOBJ_1stFloor_Entrance</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LampOBJ_1stFloor_00</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LampOBJ_1stFloor_01</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LampOBJ_1stFloor_02</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LampOBJ_1stFloor_03</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LampOBJ_1stFloor_04</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LampOBJ_1stFloor_05</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LampOBJ_1stFloor_06</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LampOBJ_1stFloor_07</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LampOBJ_1stFloor_08</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LampOBJ_1stFloor_09</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LampOBJ_1stFloor_10</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LampOBJ_1stFloor_11</DefName>
+        </GameObject>
+        <GameObject>
+            <DefName>SponzaSC_LampOBJ_1stFloor_12</DefName>
+        </GameObject>
     </Objects>
     <Defs>
         <MeshRendererDef Name="SponzaSC_Ceiling_1stFloor_01_Plaster">
@@ -190,6 +235,15 @@
                 <lv>SponzaSC_Ceiling_1stFloor_02_StoneTrims1</lv>
                 <lv>SponzaSC_Ceiling_1stFloor_02_StoneTrims2</lv>
                 <lv>SponzaSC_Ceiling_1stFloor_02_Window</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_OrnamentStones_1stFloor">
+            <ModelPath>Models/Sponza_OrnamentStones_1stFloor.obj</ModelPath>
+            <MaterialDef>Sponza_StoneTrims1Material</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_OrnamentStonesOBJ_1stFloor">
+            <Components>
+                <lv>SponzaSC_OrnamentStones_1stFloor</lv>
             </Components>
         </GameObjectDef>
         <MeshRendererDef Name="SponzaSC_Floor_1stFloor_Tiles">
@@ -691,13 +745,18 @@
                 <lv>SponzaSC_WoodDoor_WoodDoor</lv>
             </Components>
         </GameObjectDef>
-        <MeshRendererDef Name="SponzaSC_StoneWalls_2ndFloor_01_BrickWall">
-            <ModelPath>Models/Sponza_StoneWalls_2ndFloor_01_BrickWall.obj</ModelPath>
+        <MeshRendererDef Name="SponzaSC_StoneWalls_2ndFloor_01_BrickWall1">
+            <ModelPath>Models/Sponza_StoneWalls_2ndFloor_01_BrickWall1.obj</ModelPath>
             <MaterialDef>Sponza_BrickWall1Material</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_StoneWalls_2ndFloor_01_BrickWall2">
+            <ModelPath>Models/Sponza_StoneWalls_2ndFloor_01_BrickWall2.obj</ModelPath>
+            <MaterialDef>Sponza_BrickWall2Material</MaterialDef>
         </MeshRendererDef>
         <GameObjectDef Name="SponzaSC_StoneWallsOBJ_2ndFloor_01">
             <Components>
-                <lv>SponzaSC_StoneWalls_2ndFloor_01_BrickWall</lv>
+                <lv>SponzaSC_StoneWalls_2ndFloor_01_BrickWall1</lv>
+                <lv>SponzaSC_StoneWalls_2ndFloor_01_BrickWall2</lv>
             </Components>
         </GameObjectDef>
         <MeshRendererDef Name="SponzaSC_StoneWalls_2ndFloor_02_Stones">
@@ -985,6 +1044,202 @@
         <GameObjectDef Name="SponzaSC_OrnamentStonesOBJ_2ndFloor">
             <Components>
                 <lv>SponzaSC_OrnamentStones_2ndFloor</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_Entrance_Glass">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_Entrance_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_LampGlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_Entrance_Metal">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_Entrance_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LampOBJ_1stFloor_Entrance">
+            <Components>
+                <lv>SponzaSC_Lamp_1stFloor_Entrance_Glass</lv>
+                <lv>SponzaSC_Lamp_1stFloor_Entrance_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_00_Glass">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_00_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_LampGlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_00_Metal">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_00_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LampOBJ_1stFloor_00">
+            <Components>
+                <lv>SponzaSC_Lamp_1stFloor_00_Glass</lv>
+                <lv>SponzaSC_Lamp_1stFloor_00_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_01_Glass">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_01_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_LampGlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_01_Metal">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_01_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LampOBJ_1stFloor_01">
+            <Components>
+                <lv>SponzaSC_Lamp_1stFloor_01_Glass</lv>
+                <lv>SponzaSC_Lamp_1stFloor_01_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_02_Glass">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_02_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_LampGlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_02_Metal">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_02_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LampOBJ_1stFloor_02">
+            <Components>
+                <lv>SponzaSC_Lamp_1stFloor_02_Glass</lv>
+                <lv>SponzaSC_Lamp_1stFloor_02_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_03_Glass">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_03_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_LampGlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_03_Metal">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_03_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LampOBJ_1stFloor_03">
+            <Components>
+                <lv>SponzaSC_Lamp_1stFloor_03_Glass</lv>
+                <lv>SponzaSC_Lamp_1stFloor_03_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_04_Glass">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_04_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_LampGlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_04_Metal">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_04_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LampOBJ_1stFloor_04">
+            <Components>
+                <lv>SponzaSC_Lamp_1stFloor_04_Glass</lv>
+                <lv>SponzaSC_Lamp_1stFloor_04_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_05_Glass">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_05_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_LampGlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_05_Metal">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_05_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LampOBJ_1stFloor_05">
+            <Components>
+                <lv>SponzaSC_Lamp_1stFloor_05_Glass</lv>
+                <lv>SponzaSC_Lamp_1stFloor_05_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_06_Glass">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_06_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_LampGlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_06_Metal">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_06_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LampOBJ_1stFloor_06">
+            <Components>
+                <lv>SponzaSC_Lamp_1stFloor_06_Glass</lv>
+                <lv>SponzaSC_Lamp_1stFloor_06_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_07_Glass">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_07_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_LampGlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_07_Metal">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_07_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LampOBJ_1stFloor_07">
+            <Components>
+                <lv>SponzaSC_Lamp_1stFloor_07_Glass</lv>
+                <lv>SponzaSC_Lamp_1stFloor_07_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_08_Glass">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_08_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_LampGlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_08_Metal">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_08_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LampOBJ_1stFloor_08">
+            <Components>
+                <lv>SponzaSC_Lamp_1stFloor_08_Glass</lv>
+                <lv>SponzaSC_Lamp_1stFloor_08_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_09_Glass">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_09_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_LampGlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_09_Metal">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_09_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LampOBJ_1stFloor_09">
+            <Components>
+                <lv>SponzaSC_Lamp_1stFloor_09_Glass</lv>
+                <lv>SponzaSC_Lamp_1stFloor_09_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_10_Glass">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_10_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_LampGlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_10_Metal">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_10_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LampOBJ_1stFloor_10">
+            <Components>
+                <lv>SponzaSC_Lamp_1stFloor_10_Glass</lv>
+                <lv>SponzaSC_Lamp_1stFloor_10_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_11_Glass">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_11_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_LampGlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_11_Metal">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_11_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LampOBJ_1stFloor_11">
+            <Components>
+                <lv>SponzaSC_Lamp_1stFloor_11_Glass</lv>
+                <lv>SponzaSC_Lamp_1stFloor_11_Metal</lv>
+            </Components>
+        </GameObjectDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_12_Glass">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_12_Glass.obj</ModelPath>
+            <MaterialDef>Sponza_LampGlassMaterial</MaterialDef>
+        </MeshRendererDef>
+        <MeshRendererDef Name="SponzaSC_Lamp_1stFloor_12_Metal">
+            <ModelPath>Models/Sponza_Lamp_1stFloor_12_Metal.obj</ModelPath>
+            <MaterialDef>Sponza_MetalDoorMaterial</MaterialDef>
+        </MeshRendererDef>
+        <GameObjectDef Name="SponzaSC_LampOBJ_1stFloor_12">
+            <Components>
+                <lv>SponzaSC_Lamp_1stFloor_12_Glass</lv>
+                <lv>SponzaSC_Lamp_1stFloor_12_Metal</lv>
             </Components>
         </GameObjectDef>
     </Defs>
