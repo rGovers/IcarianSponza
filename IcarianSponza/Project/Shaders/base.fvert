@@ -9,7 +9,7 @@ layout(location = 0) out vec4 fragColor;
 layout(location = 1) out vec3 fragNormal;
 
 #!structure(CameraBuffer, 10, 0, camBuffer)
-#!pushbuffer(ModelBuffer, modelBuffer)
+#!pushbuffer(PModelBuffer, modelBuffer)
 
 void main()
 {

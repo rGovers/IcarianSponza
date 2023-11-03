@@ -38,7 +38,7 @@
             <Set>1</Set>
         </lv>
         <lv>
-            <BufferType>ModelBuffer</BufferType>
+            <BufferType>PModelBuffer</BufferType>
             <ShaderSlot>Vertex</ShaderSlot>
         </lv>
         <lv>
@@ -48,4 +48,19 @@
             <Set>0</Set>
         </lv>
     </ShaderBuffers>
+    <ShadowVertexShaderPath>Shaders/baseShadow.fvert</ShadowVertexShaderPath>
+    <ShadowShaderBuffers>
+        <lv>
+            <Slot>0</Slot>
+            <BufferType>PShadowLightBuffer</BufferType>
+            <ShaderSlot>Vertex</ShaderSlot>
+            <Set>0</Set>
+        </lv>
+        <lv>
+            <Slot>0</Slot>
+            <BufferType>SSModelBuffer</BufferType>
+            <ShaderSlot>Vertex</ShaderSlot>
+            <Set>0</Set>
+        </lv>
+  </ShadowShaderBuffers>
 </MaterialDef>

@@ -10,7 +10,7 @@ layout(location = 1) out vec3 fragNormal;
 layout(location = 2) out vec2 fragTexCoord;
 
 #!structure(CameraBuffer, 10, 1, camBuffer)
-#!pushbuffer(ModelBuffer, modelBuffer)
+#!pushbuffer(PModelBuffer, modelBuffer)
 
 void main()
 {

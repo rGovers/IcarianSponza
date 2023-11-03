@@ -8,9 +8,11 @@ namespace IcarianSponza
 {
     public class IcarianSponzaAssemblyControl : AssemblyControl
     {
-        Scene m_scene = null;
+        Scene                m_scene = null;
 
-        GameObject m_camObject;
+        GameObject           m_camObject;
+
+        DepthRenderTexture[] m_shadowMaps = new DepthRenderTexture[DefaultRenderPipeline.CascadeCount];
 
         void LoadMainScene(Scene a_scene, LoadStatus a_status)
         {
@@ -46,10 +48,17 @@ namespace IcarianSponza
             m_camObject.AddComponent<Camera>();
 
             GameObject lightObj = GameObject.Instantiate<GameObject>();
-            lightObj.Transform.Rotation = Quaternion.FromAxisAngle(Vector3.Normalized(new Vector3(1.0f, 0.0f, 0.5f)), 2.0f);
+            lightObj.Transform.Rotation = Quaternion.FromAxisAngle(Vector3.Normalized(new Vector3(1.0f, 0.0f, 0.3f)), 1.25f);
             DirectionalLight light = lightObj.AddComponent<DirectionalLight>();
             light.Color = Color.FromColorCode(0xEEEEFFFF);
-            light.Intensity = 1.0f;
+            light.Intensity = 0.5f;
+
+            for (uint i = 0; i < DefaultRenderPipeline.CascadeCount; ++i)
+            {
+                m_shadowMaps[i] = new DepthRenderTexture(1024, 1024);
+
+                light.AddShadowMap(m_shadowMaps[i]);
+            }
 
             GameObject entranceLampObj = GameObject.Instantiate<GameObject>();
             entranceLampObj.Transform.Translation = new Vector3(-0.91866f, -3.8831f, -15.611f);
@@ -119,11 +128,20 @@ namespace IcarianSponza
                 Application.Close();
             }
         }
+        public override void FixedUpdate()
+        {
+            // Assembly FixedUpdate
+        }
 
         public override void Close()
         {
             // Assembly Shutdown
             Logger.Message("Sponza Shutdown");
+
+            for (uint i = 0; i < DefaultRenderPipeline.CascadeCount; ++i)
+            {
+                m_shadowMaps[i].Dispose();
+            }
 
             if (m_scene != null)
             {
