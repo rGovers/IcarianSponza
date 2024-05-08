@@ -9,7 +9,7 @@ layout(location = 1) out vec4 outNormal;
 layout(location = 2) out vec4 outSpec;
 layout(location = 3) out vec4 outEmission;
 
-layout(binding = 0) uniform sampler2D colorSampler;
+#!texture(1, colorSampler)
 
 void main()
 {

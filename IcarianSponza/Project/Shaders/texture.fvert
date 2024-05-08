@@ -5,12 +5,12 @@ layout(location = 1) in vec3 normal;
 layout(location = 2) in vec4 color;
 layout(location = 3) in vec2 texCoord;
 
+#!structure(CameraBuffer, 0, camBuffer)
+#!pushbuffer(PModelBuffer, modelBuffer)
+
 layout(location = 0) out vec4 fragColor;
 layout(location = 1) out vec3 fragNormal;
 layout(location = 2) out vec2 fragTexCoord;
-
-#!structure(CameraBuffer, 10, 1, camBuffer)
-#!pushbuffer(PModelBuffer, modelBuffer)
 
 void main()
 {

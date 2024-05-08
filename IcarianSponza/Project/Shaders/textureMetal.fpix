@@ -4,13 +4,13 @@ layout(location = 0) in vec4 fragColor;
 layout(location = 1) in vec3 fragNormal;
 layout(location = 2) in vec2 fragTexCoord;
 
+#!texture(1, colorSampler)
+#!texture(2, metalSampler)
+
 layout(location = 0) out vec4 outColor;
 layout(location = 1) out vec4 outNormal;
 layout(location = 2) out vec4 outSpec;
 layout(location = 3) out vec4 outEmission;
-
-layout(binding = 0) uniform sampler2D colorSampler;
-layout(binding = 1) uniform sampler2D metalSampler;
 
 void main()
 {

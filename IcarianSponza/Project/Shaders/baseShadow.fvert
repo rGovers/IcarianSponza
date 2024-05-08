@@ -5,15 +5,13 @@ layout(location = 1) in vec3 normal;
 layout(location = 2) in vec4 color;
 layout(location = 3) in vec2 texCoord;
 
-#!pushbuffer(PShadowLightBuffer, shadowLightBuffer)
-#!structure(SSModelBuffer, 0, 0, modelBuffer)
+#!structure(ShadowLightBuffer, 0, shadowLightBuffer)
+#!pushbuffer(PModelBuffer, modelBuffer)
 
 void main()
 {
     // Flipped when exported from Blender for some reason
     vec4 pos = vec4(-position.x, position.y, position.z, 1.0f);
 
-    mat4 modelMat = #!instancedstructure(modelBuffer).Model;
-
-    gl_Position = shadowLightBuffer.LVP * modelMat * pos;
+    gl_Position = shadowLightBuffer.LVP * modelBuffer.Model * pos;
 }

@@ -1,26 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <MaterialDef Name="Sponza_MetalDoorMaterial" Parent="Base_TextureMaterial">
-    <PixelShaderPath>Shaders/textureMetal.fpix</PixelShaderPath>
-    <ShaderBuffers>
-        <lv>
-            <Slot>1</Slot>
-            <BufferType>Texture</BufferType>
-            <ShaderSlot>Pixel</ShaderSlot>
-            <Set>0</Set>
-        </lv>
-    </ShaderBuffers>
-    <TextureInputs>
-        <lv>
-            <Slot>0</Slot>
-            <Path>Textures/metal_door_01_BaseColor.png</Path>
-            <AddressMode>Repeat</AddressMode>
-            <FilterMode>Linear</FilterMode>
-        </lv>
-        <lv>
-            <Slot>1</Slot>
-            <Path>Textures/metal_door_01_Metalness.png</Path>
-            <AddressMode>Repeat</AddressMode>
-            <FilterMode>Linear</FilterMode>
-        </lv>
-    </TextureInputs>
+  <PixelShaderPath>Shaders/textureMetal.fpix</PixelShaderPath>
+  <TextureInputs>
+    <lv>
+      <Slot>1</Slot>
+      <Path>Textures/metal_door_01_BaseColor.png</Path>
+      <AddressMode>Repeat</AddressMode>
+      <FilterMode>Linear</FilterMode>
+    </lv>
+    <lv>
+      <Slot>2</Slot>
+      <Path>Textures/metal_door_01_Metalness.png</Path>
+      <AddressMode>Repeat</AddressMode>
+      <FilterMode>Linear</FilterMode>
+    </lv>
+  </TextureInputs>
 </MaterialDef>
