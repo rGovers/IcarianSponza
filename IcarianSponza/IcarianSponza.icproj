@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
     <Version>
-        <Major>0</Major>
+        <Major>2024</Major>
         <Minor>1</Minor>
+        <Patch>0</Patch>
     </Version>
 </Project>

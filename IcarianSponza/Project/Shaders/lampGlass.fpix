@@ -10,7 +10,7 @@ layout(location = 3) out vec4 outEmission;
 
 void main()
 {
-    outColor = vec4(1.0, 1.0, 1.0, 1.0);
+    outColor = vec4(1.0, 1.0, 1.0, 0.25);
     outNormal = vec4(fragNormal, 1.0);
     outSpec = vec4(0.0, 0.0, 0.0, 0.0);
     outEmission = vec4(0.5, 0.5, 0.25, 1.0);

@@ -28,5 +28,6 @@
       <Offset>44</Offset>
     </lv>
   </VertexAttributes>
-  <CullingMode>Front</CullingMode>
+  <CullingMode>None</CullingMode>
+  <ColorBlendMode>AlphaBlend</ColorBlendMode>
 </MaterialDef>

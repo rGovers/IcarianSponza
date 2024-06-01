@@ -2,6 +2,7 @@ using IcarianEngine;
 using IcarianEngine.Maths;
 using IcarianEngine.Mod;
 using IcarianEngine.Rendering;
+using IcarianEngine.Rendering.PostEffects;
 using IcarianEngine.Rendering.Lighting;
 using System.Collections.Generic;
 
@@ -36,6 +37,15 @@ namespace IcarianSponza
         {
             // Assembly Initialization
             Logger.Message("Sponza Initialization");
+            DefaultRenderPipeline pipeline = new DefaultRenderPipeline(new PostEffect[] 
+            {
+                new EmissionPostEffect(),
+                new ToneMapPostEffect()
+            });
+            
+            pipeline.SetRenderScale(2.0f);
+
+            RenderPipeline.SetPipeline(pipeline);
 
             if (!Application.IsHeadless)
             {
